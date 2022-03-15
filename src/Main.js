@@ -18,8 +18,8 @@ export const ApiQuery = (async) => {
 
     return (
         <div>
-            {newsList.map((item) => (
-                <p key={item.id}>{item.title}</p>
+            {newsList.map((item, index) => (
+                <p key={index}>{item.title}</p>
             ))}
         </div>
     );
